@@ -1,0 +1,21 @@
+# Core dependencies (required)
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pycryptodome==3.19.0
+Pillow==10.1.0
+opencv-python==4.8.1.78
+numpy==1.24.3
+PyWavelets==1.4.1
+scikit-image==0.21.0
+pytest==7.4.3
+httpx==0.25.2
+
+# StegnoGAN++ dependencies
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# Optional dependencies (for enhanced video support)
+moviepy==1.0.3
+# python-magic==0.4.27  # Comment out if causing issues

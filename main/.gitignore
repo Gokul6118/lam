@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Node.js
+node_modules/
+build/
+
+# Binaries
+*.dll
+*.lib
+*.so
+*.dylib
+*.exe
+
+# OS & IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
