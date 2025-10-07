@@ -44,7 +44,15 @@ const EmbedPage: React.FC = () => {
         }
       } catch (err) {
         console.error('Failed to fetch algorithms:', err);
-        setError('Failed to load algorithm information. Please ensure the backend is running.');
+        // Set default algorithms as fallback
+        const defaultAlgorithms: Algorithms = {
+          encryption: ['AES-256', 'RSA-2048', 'Blowfish', 'Salsa20', 'ChaCha20'],
+          steganography: ['LSB', 'PVD', 'DCT', 'F5', 'DWT']
+        };
+        setAlgorithms(defaultAlgorithms);
+        setEncryptionMethod('AES-256');
+        setStegoMethod('LSB');
+        setError('Using default algorithms. Backend connection failed - please start the backend server.');
       }
     };
     fetchAlgorithms();
